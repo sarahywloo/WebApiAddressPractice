@@ -1,0 +1,26 @@
+﻿@{ 
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <form action="/api/customers" method="post">
+        <p>First Name</p>
+        <input name="firstName" placeholder="Enter first name here" /><br />
+        <p>Last Name</p>
+        <input name="lastName" placeholder="Enter last name here" /><br />
+        <p>Shipping Address</p>
+        <input name="shippingAddress.street" placeholder="Enter shipping street name here" />
+        <input name="shippingAddress.city" placeholder="Enter shipping city here" /><br />
+        <p>Billing Address</p>
+        <input name="shippingAddress.street" placeholder="Enter billing street name here" />
+        <input name="shippingAddress.city" placeholder="Enter billing city here" /><br />
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
